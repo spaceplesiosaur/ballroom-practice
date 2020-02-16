@@ -4,6 +4,22 @@
   text-align: center;
 }
 
+.buttonBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.goButton {
+  width: 3em;
+  height: 3em;
+  margin: 3em;
+}
+
+.around {
+  padding: 4em;
+}
+
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;

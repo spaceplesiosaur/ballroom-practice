@@ -10,21 +10,10 @@ export default class RenderArea extends Component {
     }
   }
 
-  generateCards = () => {
-    return this.props.cards.map((card) => {
-      return (<NameCard
-              id={Date.now()}
-              name={card.name}
-              status={card.status}
-              interests={card.interests}
-              remove={this.props.remove}
-            />)
-    })
-  }
   render() {
     return (
       <section className="renderArea">
-        {this.generateCards()}
+        {this.props.count.toString()}
       </section>
     )
   }

@@ -27,12 +27,10 @@ export default class Form extends Component {
           <input className="formInput" type="text" name="name" value={this.state.name} onChange={this.handleChange}></input>
         </div>
         <div>
-          <label for="name">Status</label>
-          <input className="formInput" type="text" name="status" value={this.state.status} onChange={this.handleChange}></input>
+          <button onClick={this.addNewMember}>button 1</button>
         </div>
         <div>
-          <label for="name">Interests</label>
-          <input className="formInput" type="text" name="interests" value={this.state.interests} onChange={this.handleChange}></input>
+          <button onClick={this.addNewMember}>button 2</button>
         </div>
         <button onClick={this.addNewMember}>Submit Band Member</button>
       </section>
